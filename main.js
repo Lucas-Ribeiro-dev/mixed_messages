@@ -8,19 +8,19 @@ console.log(randNum());
 const getSentence = (num) => {
     switch (num) {
         case 1:
-            return `${wordOne} base sentence 1 ${wordTwo}!`;
+            return `Between ${wordOne} and the ${wordTwo}, there is a choice only you can make.`;
             break;
         case 2:
-            return `${wordOne} base sentence 2 ${wordTwo}!`;
+            return `${wordOne} is what remains when you face the ${wordTwo}.`;
             break;
         case 3:
-            return `${wordOne} base sentence 3 ${wordTwo}!`;
+            return `Sometimes, ${wordOne} appears just before the ${wordTwo}.`;
             break;
         case 4:
-            return `${wordOne} base sentence 4 ${wordTwo}!`
+            return `Without ${wordOne}, no step leads to the ${wordTwo}.`
             break;
         case 5:
-            return `${wordOne} base sentence 5 ${wordTwo}!`
+            return `${wordOne} doesn’t stop the ${wordTwo}, but it changes how you reach it.`
             break;
         default:
             break;    
