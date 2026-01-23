@@ -16,7 +16,6 @@ const result = getWords();
 const wordOne = result[0];
 const wordTwo = result[1];
 
-
 //returns a sentence based on the random number
 const getSentence = (num) => {
     switch (num) {
