@@ -1,6 +1,24 @@
 
+<<<<<<< HEAD
 //This one will give us a random number so we can reuse this funtion on our other functions
+=======
+>>>>>>> refs/remotes/origin/main
 const randNum = () => Math.floor(Math.random() * 5) + 1;
+
+//generate the words to be used in the sentences
+const getWords = () => {
+    const group1 = ['Silence', 'Courage', 'Time', 'Fear', 'Hope']
+    const group2 = ['the unknown', 'the end', 'the horizon', 'the darkness', 'the truth'];
+
+    let wordOne = group1[randNum() - 1];
+    let wordTwo = group2[randNum() - 1];
+
+    return [wordOne, wordTwo];
+}
+
+const result = getWords();
+const wordOne = result[0];
+const wordTwo = result[1];
 
 //generate the words to be used in the sentences
 const getWords = () => {
