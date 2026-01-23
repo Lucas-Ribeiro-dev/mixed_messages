@@ -11,7 +11,56 @@ body {
     padding-top: 4.5%;
 }
 
-h1, h2 {
-    font-family: 'Times New Roman', Times, serif;
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
 
+h3 {
+    font-family: times, serif;
+    font-size: 1.3em;
+    margin-bottom: 2.5em;
+    color: #474747;
+}
+
+#genBtn {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
+
+#genBtn:hover {
+    background-color: #9e240fcc;
+}
+
+#output-box {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    color: #222;
+    background-color: rgba(255, 246, 235, 0.589);
+
+    height: 300px;
+    width: 80%;
+    max-width: 650px;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Placeholder styling for empty output box */
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder); 
+  color: #999; 
 }
