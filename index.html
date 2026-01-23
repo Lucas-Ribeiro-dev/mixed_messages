@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mixed Messages</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Random Thought Generator</h1>
@@ -13,10 +15,12 @@
     </header>
 
     <main>
-        <button id="genBtn">Generate Sentence</button>
+        <button id="genBtn" onclick="printOutput()">Generate Sentence</button>
         <div id="output-box">
             <p id="output" data-placeholder="Your Sentence Will Show Up Here..." contenteditable></p>
         </div>
     </main>
+    <script src="main.js"></script>
 </body>
+
 </html>

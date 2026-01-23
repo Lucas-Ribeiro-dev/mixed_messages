@@ -38,4 +38,8 @@ const getSentence = (num) => {
             break;    
     }
 }
-console.log(getSentence(randNum()));
+
+//prints the output to the HTML
+function printOutput() {
+    document.getElementById('output').innerHTML = getSentence(randNum())
+}
